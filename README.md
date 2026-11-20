@@ -181,15 +181,6 @@ A real-world **React.js** employee portal developed as a Summer Intern (May – 
 
 </div>
 
----
-
-## 🧠 Live Inference: How My Models See the World
-
-<div align="center">
-  <img src="./ai-scan.svg" alt="Animated emotion-recognition neural network panel" width="100%" />
-  <br/>
-  <sub>Webcam frame → facial landmarks → neural network → emotion prediction. The same pipeline idea behind <b>Skillbrew.AI</b> and <b>MAITRI</b>.</sub>
-</div>
 
 ---
 
