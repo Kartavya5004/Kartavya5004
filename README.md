@@ -169,12 +169,6 @@ A real-world **React.js** employee portal developed as a Summer Intern (May – 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kartavya5004&theme=tokyo-night&hide_border=true&area=true&custom_title=Kartavya's%20Contribution%20Graph" width="100%" />
 </div>
 
-### 🏆 Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kartavya5004&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&row=1&column=7" />
-</div>
-
 ---
 
 ## 🧩 Problem Solving
