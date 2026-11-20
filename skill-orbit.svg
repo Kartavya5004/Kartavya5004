@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="Animated skill universe: tech skills orbiting a glowing core" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#1a1040"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#00f7ff"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0.2"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00f7ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#00f7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    text { font-family: 'Courier New', Consolas, monospace; }
+    .ring { fill: none; stroke-width: 1; stroke-dasharray: 4 8; opacity: 0.45; animation: dash 6s linear infinite; }
+    .star { fill: #ffffff; animation: twinkle 3s ease-in-out infinite; }
+    .pill-t { font-size: 11px; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+    @keyframes dash { to { stroke-dashoffset: -24; } }
+    @keyframes twinkle { 0%,100% { opacity: .1; } 50% { opacity: .9; } }
+  </style>
+
+  <!-- background -->
+  <rect x="1" y="1" width="798" height="438" rx="16" fill="url(#bg)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- stars -->
+  <circle class="star" cx="60" cy="70" r="1.5"/>
+  <circle class="star" cx="150" cy="380" r="1.5" style="animation-delay:.5s"/>
+  <circle class="star" cx="720" cy="90" r="1.5" style="animation-delay:1s"/>
+  <circle class="star" cx="680" cy="370" r="1.5" style="animation-delay:1.5s"/>
+  <circle class="star" cx="250" cy="40" r="1" style="animation-delay:2s"/>
+  <circle class="star" cx="560" cy="30" r="1" style="animation-delay:.3s"/>
+  <circle class="star" cx="40" cy="250" r="1" style="animation-delay:.8s"/>
+  <circle class="star" cx="765" cy="240" r="1" style="animation-delay:1.2s"/>
+  <circle class="star" cx="330" cy="415" r="1" style="animation-delay:1.8s"/>
+  <circle class="star" cx="470" cy="418" r="1" style="animation-delay:2.4s"/>
+  <circle class="star" cx="110" cy="150" r="1" style="animation-delay:2.7s"/>
+  <circle class="star" cx="700" cy="170" r="1" style="animation-delay:.1s"/>
+
+  <text x="24" y="34" font-size="13" fill="#8b949e">&gt; skill-universe.exe --orbit</text>
+
+  <!-- orbit rings -->
+  <circle class="ring" cx="400" cy="220" r="90" stroke="#a78bfa"/>
+  <circle class="ring" cx="400" cy="220" r="150" stroke="#00f7ff"/>
+  <circle class="ring" cx="400" cy="220" r="200" stroke="#f7b93e"/>
+
+  <!-- core -->
+  <circle cx="400" cy="220" r="62" fill="url(#glow)">
+    <animate attributeName="r" values="56;70;56" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="220" r="34" fill="url(#sun)">
+    <animate attributeName="r" values="32;36;32" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="400" y="221" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#0b0f1a">KG</text>
+
+  <!-- ===== INNER RING: AI / ML (r=90, forward, 14s) ===== -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 220" to="360 400 220" dur="14s" repeatCount="indefinite"/>
+    <g transform="translate(490,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="14s" repeatCount="indefinite"/>
+        <rect x="-31" y="-12" width="62" height="24" rx="12" fill="#1f1a3d" stroke="#a78bfa" stroke-width="1.5"/>
+        <text class="pill-t" fill="#d8ccff">Python</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="120 400 220" to="480 400 220" dur="14s" repeatCount="indefinite"/>
+    <g transform="translate(490,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-120" to="-480" dur="14s" repeatCount="indefinite"/>
+        <rect x="-31" y="-12" width="62" height="24" rx="12" fill="#1f1a3d" stroke="#a78bfa" stroke-width="1.5"/>
+        <text class="pill-t" fill="#d8ccff">OpenCV</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="240 400 220" to="600 400 220" dur="14s" repeatCount="indefinite"/>
+    <g transform="translate(490,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-240" to="-600" dur="14s" repeatCount="indefinite"/>
+        <rect x="-45" y="-12" width="90" height="24" rx="12" fill="#1f1a3d" stroke="#a78bfa" stroke-width="1.5"/>
+        <text class="pill-t" fill="#d8ccff">TensorFlow</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== MIDDLE RING: WEB (r=150, reverse, 22s) ===== -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="20 400 220" to="-340 400 220" dur="22s" repeatCount="indefinite"/>
+    <g transform="translate(550,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-20" to="340" dur="22s" repeatCount="indefinite"/>
+        <rect x="-28" y="-12" width="56" height="24" rx="12" fill="#0e2a33" stroke="#00f7ff" stroke-width="1.5"/>
+        <text class="pill-t" fill="#b8fbff">React</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="110 400 220" to="-250 400 220" dur="22s" repeatCount="indefinite"/>
+    <g transform="translate(550,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-110" to="250" dur="22s" repeatCount="indefinite"/>
+        <rect x="-20" y="-12" width="40" height="24" rx="12" fill="#0e2a33" stroke="#00f7ff" stroke-width="1.5"/>
+        <text class="pill-t" fill="#b8fbff">JS</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="200 400 220" to="-160 400 220" dur="22s" repeatCount="indefinite"/>
+    <g transform="translate(550,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-200" to="160" dur="22s" repeatCount="indefinite"/>
+        <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#0e2a33" stroke="#00f7ff" stroke-width="1.5"/>
+        <text class="pill-t" fill="#b8fbff">Node.js</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="290 400 220" to="-70 400 220" dur="22s" repeatCount="indefinite"/>
+    <g transform="translate(550,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-290" to="70" dur="22s" repeatCount="indefinite"/>
+        <rect x="-28" y="-12" width="56" height="24" rx="12" fill="#0e2a33" stroke="#00f7ff" stroke-width="1.5"/>
+        <text class="pill-t" fill="#b8fbff">Flask</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== OUTER RING: CORE & CLOUD (r=200, forward, 32s) ===== -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="30 400 220" to="390 400 220" dur="32s" repeatCount="indefinite"/>
+    <g transform="translate(600,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-30" to="-390" dur="32s" repeatCount="indefinite"/>
+        <rect x="-28" y="-12" width="56" height="24" rx="12" fill="#33280e" stroke="#f7b93e" stroke-width="1.5"/>
+        <text class="pill-t" fill="#ffe3a3">C/C++</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="102 400 220" to="462 400 220" dur="32s" repeatCount="indefinite"/>
+    <g transform="translate(600,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-102" to="-462" dur="32s" repeatCount="indefinite"/>
+        <rect x="-25" y="-12" width="50" height="24" rx="12" fill="#33280e" stroke="#f7b93e" stroke-width="1.5"/>
+        <text class="pill-t" fill="#ffe3a3">Java</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="174 400 220" to="534 400 220" dur="32s" repeatCount="indefinite"/>
+    <g transform="translate(600,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-174" to="-534" dur="32s" repeatCount="indefinite"/>
+        <rect x="-25" y="-12" width="50" height="24" rx="12" fill="#33280e" stroke="#f7b93e" stroke-width="1.5"/>
+        <text class="pill-t" fill="#ffe3a3">AWS</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="246 400 220" to="606 400 220" dur="32s" repeatCount="indefinite"/>
+    <g transform="translate(600,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-246" to="-606" dur="32s" repeatCount="indefinite"/>
+        <rect x="-25" y="-12" width="50" height="24" rx="12" fill="#33280e" stroke="#f7b93e" stroke-width="1.5"/>
+        <text class="pill-t" fill="#ffe3a3">DSA</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="318 400 220" to="678 400 220" dur="32s" repeatCount="indefinite"/>
+    <g transform="translate(600,220)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="-318" to="-678" dur="32s" repeatCount="indefinite"/>
+        <rect x="-25" y="-12" width="50" height="24" rx="12" fill="#33280e" stroke="#f7b93e" stroke-width="1.5"/>
+        <text class="pill-t" fill="#ffe3a3">Git</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- legend -->
+  <circle cx="30" cy="420" r="5" fill="#a78bfa"/>
+  <text x="42" y="424" font-size="11" fill="#c9d1d9">AI / ML</text>
+  <circle cx="115" cy="420" r="5" fill="#00f7ff"/>
+  <text x="127" y="424" font-size="11" fill="#c9d1d9">Web</text>
+  <circle cx="183" cy="420" r="5" fill="#f7b93e"/>
+  <text x="195" y="424" font-size="11" fill="#c9d1d9">Core &amp; Cloud</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplZGU3YTBlMC1jMGU5LTQxODEtYTc4Yy0zYzc1NWM5ZjcyNjYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaI8sDzZJA4tQZm9Sfs8pxBIAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyMWYyZmIyNi0yNjI0LTQwMmQtOGNlOS03MjgyODA4ZjllZjdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoA2gapxgG6MPg5/8iB4u9sAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggXwU9mTRKyh5WvGaMrcsTirejX8646G+35DJtSpiyTVOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPmcDV34L1pggAXqF4lxb+YAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIH6FKA+pahw6ujFVxkuKSDqdT1pSSGd+yMgjYOX7IArbZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSa8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmVkZTdhMGUwLWMwZTktNDE4MS1hNzhjLTNjNzU1YzlmNzI2Ni9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjVmMzU2YWYwLTE3YTItNDdiOC1iYjJiLWY5NTY0OTI3Y2U5YnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBfBT2ZNErKHla8ZoytyxOKt6Nfzrjob7fkMm1KmLJNU6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggLuEBNRIMS9lfGGx9C3BLWKVR7Bmr5wksnYEre0sD1AiiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggSVSIavobPmq+YzDYcdntQ9d6j5VOaMRF8/m3pIkSwbB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQPgg7XFVmK84arycHYxDohTuuTbuXud4y41ZFjHTupaWNtyUSd/f5uo+9ltTtfrgantr4NlSdwPQ9g8VuQ8ETSI=</c2pa:manifest></metadata></svg>
